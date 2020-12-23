@@ -1,0 +1,22 @@
+Cucumber kan als volgt worden geinstalleerd:
+
+Zie ook: https://www.toolsqa.com/cypress/bdd-automation-framework-in-cypress/
+
+1. vanuit je projectdirectory in de terminal:	npm install --save-dev cypress-cucumber-preprocessor
+2. In de plugins/index.js file moet het volgende worden toegevoegd:
+const cucumber = require('cypress-cucumber-preprocessor').default
+
+module.exports = (on, config) => {
+  on('file:preprocessor', cucumber())
+}
+
+3. In de cypress.json file moet het volgende worden toegevoegd:
+{
+  "testFiles": "**/*.{feature,features}"
+}
+
+4. In de Package.json file moet de volgende dependency worden toegevoegd:
+"cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+}
+
