@@ -1,7 +1,7 @@
 import {Given, Then, When} from "cypress-cucumber-preprocessor/steps"
 
-Given('Open de website', () => {
-    cy.visit('baseUrl')
+Given('Open de website {string}', baseUrl => {
+    cy.openUrl(baseUrl)
 })
 
 When('Vul {string} in de textbox search _query_top', artikel => {
@@ -9,10 +9,10 @@ When('Vul {string} in de textbox search _query_top', artikel => {
     cy.get('#search_query_top').type(artikel);
 })
 
-When('Klik op de button submit_search', () => {
-    cy.get('.button-search').click();
-    cy.get('#searchbox').submit();
+When('Klik op de button {string}', button => {
+    cy.klikopButton(button)
 })
+
 Then('De tekst {string} wordt getoond', zoekContent => {
     cy.get('.lighter').should('contain', zoekContent)
 })
