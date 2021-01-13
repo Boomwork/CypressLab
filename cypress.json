@@ -3,3 +3,4 @@
   "pageLoadTimeout": 120000,
   "testFiles": "**/*.{feature,features}"
 }
+
