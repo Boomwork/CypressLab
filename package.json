@@ -2,10 +2,11 @@
   "devDependencies": {
     "c8": "7.2.0",
     "cypress-cucumber-preprocessor": "^4.0.0",
+    "cypress-xpath": "^1.6.1",
     "mocha": "^8.2.1",
     "testmatrix": "0.1.2"
   },
   "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": true
+    "nonGlobalStepDefinitions": false
   }
 }

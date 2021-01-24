@@ -24,11 +24,7 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
 
-
-// -- Open url --
-Cypress.Commands.add("openUrl", (url) => {
-    cy.visit('baseUrl')
-})
+// --------------------- Generieke commands -------------------------
 
 
 // --  Inloggen --
@@ -40,7 +36,4 @@ Cypress.Commands.add("typeLogin", (user) => {
         .type(user.password)
 })
 
-// -- Klik op button -- //
-Cypress.Commands.add("klikopButton", (button) => {
-    cy.get(button).click();
-})
+
