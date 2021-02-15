@@ -35,3 +35,6 @@ Feature: Zoeken van artikelen
       | Artikel | Tekst   | Aantal items              |
       | Chiffon | Chiffon | 2 results have been found |
       | short   | short   | 4 results have been found |
+
+
+

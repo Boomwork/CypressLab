@@ -11,4 +11,4 @@ Then('De spantekst {string} wordt getoond', tekst => {
 
 Then('De paragraaftekst {string} wordt getoond', (tekst) => {
     tekstboxPage.getparagraphTekst(tekst).should('contain', tekst);
-})
+});

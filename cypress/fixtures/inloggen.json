@@ -1,0 +1,20 @@
+[
+  {
+    "button1": "Sign in",
+    "username": "test123@test.nl",
+    "password": "Tester12345",
+    "textbox1": "email",
+    "textbox2": "passwd",
+    "button2": "SubmitLogin",
+    "errortekst": "There is 1 error"
+  },
+  {
+    "button1": "Sign in",
+    "username": "test1@test.nl",
+    "password": "Tester1234567",
+    "textbox1": "email",
+    "textbox2": "passwd",
+    "button2": "SubmitLogin",
+    "errortekst": "There is 1 error"
+  }
+]

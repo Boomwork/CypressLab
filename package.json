@@ -8,5 +8,8 @@
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": false
+  },
+  "dependencies": {
+    "xlsx": "^0.16.9"
   }
 }

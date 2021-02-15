@@ -1,0 +1,15 @@
+Opnemen van Cypress in Jenkins
+
+Zie ook: https://www.youtube.com/watch?v=CG_FMFdxJ_c
+
+1. Open Jenkins
+2. Selecteer New Item
+3. Geef nu een zelf gekozen naam aan de job
+4  Selecteer Freestyle project
+5  Vul bij de Repository URL de naam in van de GIT repository
+6  Geef de credentials op van de GIT repository
+7  Selecteer bij Build environment de optie Provide Node & Bin folder to Path
+8  Bij de Build sectie geef je de volgende commando'op:
+		•	Npm install cypress
+		•	/user/local/bin/cypress/ run
+9  Sla nu het project op
