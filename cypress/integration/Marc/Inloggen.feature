@@ -29,7 +29,12 @@ Feature: Login op de site http://automationpractice.com/index.php
     When Klik op de button 'SubmitLogin'
     Then De paragraaftekst 'There is 1 error' wordt getoond
 
-  @focus
+
   Scenario: Inloggen m.b.v. Testdata uit Json
+
     When Gebruik de testdata uit de json file om in te loggen
 
+  @focus
+  Scenario: Wegschrijven users waarmee de test wordt uitgevoerd
+
+    When Schrijf de users en passwords weg die gebruikt worden om mee in te loggen

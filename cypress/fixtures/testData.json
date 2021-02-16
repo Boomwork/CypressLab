@@ -1,0 +1,9 @@
+{
+  "button1": "Sign in",
+  "username": "test1@test.nl",
+  "password": "Tester1234567",
+  "textbox1": "email",
+  "textbox2": "passwd",
+  "button2": "SubmitLogin",
+  "errortekst": "There is 1 error"
+}

@@ -15,7 +15,7 @@ When('Gebruik de testdata uit de json file om in te loggen', function () {
                 button2: testDatarow.button2,
                 errortekst: testDatarow.errortekst
             }
-            it('inloggen', function () {
+
                 cy.visit('baseUrl');
                 buttonPage.getButton(data.button1).click();
                 tekstboxPage.fillTekstinTextbox(data.textbox1).type(data.username);
@@ -25,4 +25,4 @@ When('Gebruik de testdata uit de json file om in te loggen', function () {
             });
         });
     });
-});
+
