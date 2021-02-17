@@ -16,6 +16,7 @@ Feature: Zoeken van artikelen
     Then De spantekst 'blouses' wordt getoond
     Then De spantekst '1 result has been found.' wordt getoond
 
+  @smoke
   Scenario: Zoek T-shirts
 
     Given Open de website 'http://automationpractice.com/index.php'
