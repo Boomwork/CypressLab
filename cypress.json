@@ -1,7 +1,7 @@
 {
   "baseUrl": "http://automationpractice.com/index.php",
   "pageLoadTimeout": 120000,
-  "testFiles": "**/*.{feature,features}",
+  "testFiles": "**/*.feature",
   "retries": {
     "runMode": 2,
     "openMode": 1

@@ -33,5 +33,7 @@ Het configureren van het aantal retries gaat als volgt: Voeg de volgende code to
   }
 }
 
+Om excel files te kunnen lezen moet de volgende plugin geinstalleerd worden:
 
+npm install exceljs
 

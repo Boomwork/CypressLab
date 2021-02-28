@@ -1,0 +1,76 @@
+Tags kunnen als volgt gebruikt worden:
+
+Voorbeeld:
+
+Feature File1:
+
+@feature-tag
+Feature: The Facebook
+
+  I want to open a social network page
+
+  @tag-to-include
+  Scenario: Opening a social network page
+    Given I open Facebook page
+    Then I see "Facebook" in the title
+
+  @another-tag-to-include @some-other-tag
+  Scenario: Different kind of opening
+    Given I kinda open Facebook page
+    Then I am very happy
+
+Feature File2:
+
+@feature-tag @github-tag
+Feature: The GitHub
+
+  I want to tweet things
+
+  @tag-to-include
+  Scenario: Opening GitHub
+    Given I open GitHub page
+    Then I see "GitHub" in the title
+
+  @another-tag-to-include
+  Scenario: Opening GitHub again
+    Given I open GitHub page
+    Then I see "GitHub" in the title
+
+Soorten commando's:
+
+**** Simpel commando ****
+
+npx cypress-tags run -e TAGS="@feature-tag"
+
+Resultaat:
+Feature file1: 2 testen gaan lopen
+Feature file2: 2 testen gaan lopen
+
+**** Gebruik maken van not ****
+
+npx cypress-tags run -e TAGS="not @github-tag"
+
+Resultaat:
+Feature file1: 2 testen gaan lopen
+Feature file2: 0 testen gaan lopen
+
+**** Gebruik maken van and ****
+
+npx cypress-tags run -e TAGS="@another-tag-to-include and @some-other-tag"
+
+Resultaat:
+Feature file1: 1 test gaat lopen
+Feature file2: 0 testen gaan lopen
+
+**** Gebruik maken van or ****
+
+npx cypress-tags run -e TAGS="@tag-to-include or @another-tag-to-include"
+
+Feature file1: 2 testen gaan lopen
+Feature file2: 2 testen gaan lopen
+
+**** Gebruik maken van @focus ****
+
+Alleen de scenarios met @focus draaien. Verder geen speciaal commando hiervoor benodigd
+
+Let op cypress.json instelling --> "testFiles": "**/*.feature"

@@ -10,6 +10,7 @@
     "nonGlobalStepDefinitions": false
   },
   "dependencies": {
+    "exceljs": "^4.2.0",
     "xlsx": "^0.16.9"
   }
 }

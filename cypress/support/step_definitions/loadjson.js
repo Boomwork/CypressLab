@@ -26,3 +26,6 @@ When('Gebruik de testdata uit de json file om in te loggen', function () {
         });
     });
 
+When(/^Gebruik de testdata uit de Excel file om in te loggen$/, function () {
+
+});
