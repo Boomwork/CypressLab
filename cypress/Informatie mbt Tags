@@ -73,4 +73,6 @@ Feature file2: 2 testen gaan lopen
 
 Alleen de scenarios met @focus draaien. Verder geen speciaal commando hiervoor benodigd
 
+**** Let op cypress.json instelling ****
+
 Let op cypress.json instelling --> "testFiles": "**/*.feature"
